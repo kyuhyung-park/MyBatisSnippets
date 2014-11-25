@@ -23,7 +23,8 @@ hs_err_pid*
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -58,3 +59,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+.idea/
+.idea/libraries/
+target/
+.idea/libraries/Maven__mysql_mysql_connector_java_5_1_29.xml
+.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml
+.idea/libraries/org_mybatis_mybatis_3_2_5.xml
