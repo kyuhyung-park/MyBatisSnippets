@@ -21,13 +21,23 @@ public class MyBatisExam1 {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        List<Model1> list = sqlSession.getMapper(Model1Mapper.class).list();
 
+        // 어노테이션을 이용한 매퍼를 사용하여 쿼리 수행
+//        List<Model1> list = sqlSession.getMapper(Model1Mapper.class).list();
+//        System.out.println("MyBatisExam1 list results:");
+//        for(Model1 model1:list){
+//            System.out.println(model1);
+//        }
 
-        System.out.println("MyBatisExam1 list results:");
-        for(Model1 model1:list){
-            System.out.println(model1);
+        System.out.println("");
+
+        // xml 파일을 이용한 매퍼를 사용하여 쿼리 수행
+        List<Model2> model2List = sqlSession.selectList("exam.Model2Mapper.listModel2");
+        System.out.println("model2 list:");
+        for(Model2 model2:model2List){
+            System.out.println(model2);
         }
+
 
     }
 }

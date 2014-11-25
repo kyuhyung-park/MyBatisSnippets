@@ -12,3 +12,7 @@ Database 준비
 - create table model1 ( name char(200), description char(200) );
 - insert into model1(name, description) values('James','developer');
 - insert into model1(name, description) values('Jane','designer');
+
+- create table model2 ( keyfield char(200), valuefield char(200) );
+- insert into model2(keyfield, valuefield) values('k1','v1');
+- insert into model2(keyfield, valuefield) values('k2','v2');

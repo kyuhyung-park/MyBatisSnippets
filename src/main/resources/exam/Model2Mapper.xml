@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="exam.Model2Mapper">
+
+    <select id="listModel2" resultMap="model2ResultMap">
+        select
+        keyfield,
+        valuefield
+        from model2
+    </select>
+
+    <resultMap id="model2ResultMap" type="exam.Model2">
+        <!--<id property="id" column="id" />-->
+        <result property="key" column="keyfield" />
+        <result property="value" column="valuefield" />
+
+    </resultMap>
+
+</mapper>

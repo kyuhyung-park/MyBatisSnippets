@@ -15,7 +15,10 @@
             </dataSource>
         </environment>
     </environments>
+    <!--<mappers>-->
+        <!--<package name="exam"/>-->
+    <!--</mappers>-->
     <mappers>
-        <package name="exam"/>
+        <mapper resource="exam/Model2Mapper.xml"/>
     </mappers>
 </configuration>
